@@ -1,0 +1,11 @@
+version: '2'
+services:
+    blogsg-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/blogsg/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=blogsg
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
