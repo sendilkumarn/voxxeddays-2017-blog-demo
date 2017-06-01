@@ -1,0 +1,26 @@
+entity Blog {
+    name String required,
+    handle String required
+}
+
+entity Entry {
+    title String required,
+    content TextBlob required,
+    date ZonedDateTime required
+}
+
+entity Tag {
+ 	name String required
+}
+
+relationship OneToMany {
+    Blog{entry} to Entry{blog(name)}
+}
+
+relationship ManyToOne {
+    Blog{user(login)} to User{blog}
+}
+
+relationship ManyToMany {
+    Entry{tag(name)} to Tag{entry(name)}
+}

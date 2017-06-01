@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "entry",
+            "otherEntityName": "entry",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "tag"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170601232557",
+    "entityTableName": "tag",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
