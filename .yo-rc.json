@@ -32,6 +32,7 @@
     "nativeLanguage": "en",
     "languages": [
       "en"
-    ]
+    ],
+    "herokuAppName": "blogsg"
   }
 }
